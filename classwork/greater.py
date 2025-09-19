@@ -6,3 +6,9 @@ elif a<b:
     print("b is grater")
 else:
     print("a is equal to b")        
+
+# TODO ASSIGNMENT THIS
+
+# ?? USING ELIF 
+
+# !! Find the relation between three number
