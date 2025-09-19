@@ -7,7 +7,6 @@ n3 = int(input("Enter the value 3 : "))
 if n1 > n2:
     if n1 > n3:
         print("n1 is greatest")
-
     else:
         print("n3 greatest")
 else:
