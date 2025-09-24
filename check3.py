@@ -1,21 +1,26 @@
 # TODO EXTRACTING THE CHARACTER IN UPPERCASE, LOWERCASE, NUMBERS, SPECIAL CHARACTERS
 
-a = "Python@123!9"
-out = 0
+text = input("Enter a string: ")
 
-upper = []
-lower = []
-number = []
-special_char = []
+uppercase = ""
+lowercase = ""
+numbers = ""
+special = ""
 
-while out<len(a) :
-    if 'A'<= a[out]<= 'Z':
-        print("uppercase")
-    elif 'a' <= a[out] <= 'z':
-        print("lowercase")
-    elif '0' <= a[out] <= '9':
-        print("numbers")
-    else:
-        print("special character")
-    out+=1
-print(upper)
+i = 0
+while i < len(text):
+    ch = text[i]
+    if 'A' <= ch <= 'Z':  # uppercase check
+        uppercase += ch
+    elif 'a' <= ch <= 'z':  # lowercase check
+        lowercase += ch
+    elif '0' <= ch <= '9':  # number check
+        numbers += ch
+    else:  # everything else = special character
+        special += ch
+    i += 1  # move to next character
+
+print("Uppercase characters:", uppercase)
+print("Lowercase characters:", lowercase)
+print("Numbers:", numbers)
+print("Special characters:", special)
